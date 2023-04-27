@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <!-- Facebook sharing information tags -->
+        <meta property="og:title" content="" />
+        
+        <title></title>
+		<style type="text/css">
+			/* Client-specific Styles */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+			body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+			
+			/* Reset Styles */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table td{border-collapse:collapse;}
+			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+			
+			/* Template Styles */
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Page
+			* @section background color
+			* @tip Set the background color for your email. You may want to choose one that matches your company's branding.
+			* @theme page
+			*/
+			body, #backgroundTable{
+				/*@editable*/ background-color: transparent;
+			}
+
+			/**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+			#templateContainer{
+				/*@editable*/ border: 1px solid lightgray;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color for your email's body area.
+			*/
+			#templateContainer, .bodyContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+			
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyContent div{
+				/*@editable*/ color:#111;
+				/*@editable*/ font-family:Arial;
+				font-weight: 600;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:right;
+			}
+			
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color: #1155cc;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+				font-weight: 600;
+			}
+			
+			.bodyContent img {
+				display:inline;
+				height:auto;
+			}
+			
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: SIDEBAR /\/\/\/\/\/\/\/\/\/\ */
+			
+			/**
+			* @tab Sidebar
+			* @section sidebar style
+			* @tip Set the background color and border for your email's sidebar area.
+			*/
+			#templateSidebar{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border-right:0;
+			}
+			
+			/**
+			* @tab Sidebar
+			* @section sidebar text
+			* @tip Set the styling for your email's sidebar text. Choose a size and color that is easy to read.
+			*/
+			.sidebarContent div{
+				/*@editable*/ color:#111111;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+			
+			/**
+			* @tab Sidebar
+			* @section sidebar link
+			* @tip Set the styling for your email's sidebar links. Choose a color that helps them stand out from your text.
+			*/
+			.sidebarContent div a:link, .sidebarContent div a:visited, /* Yahoo! Mail Override */ .sidebarContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.sidebarContent img{
+				display:inline;
+				height:auto;
+			}
+			
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
+			
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and top border for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border-top:0;
+			}
+			
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent div{
+				/*@editable*/ color:#707070;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:125%;
+				/*@editable*/ text-align:left;
+			}
+			
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.footerContent img{
+				display:inline;
+			}
+			
+			
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			* @theme footer
+			*/
+			#utility{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border:0;
+				padding-top: 20px;
+			}
+
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			*/
+			#utility div{
+				/*@editable*/ text-align:center;
+			}
+			.flf-logo {
+				margin-bottom: 15px;
+			}
+			.user-photo {
+				padding-top: 10px;
+			}
+		</style>
+	</head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
+            	<tr>
+                	<td align="center" valign="top">
+                    	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer">
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Body \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+                                    	<tr>
+                                        	<!-- // Begin Sidebar \\  -->
+                                        	<td valign="top" width="280" id="templateSidebar">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="280">
+                                                	<tr>
+                                                    	<td valign="top" class="sidebarContent">
+
+                                                            <!-- // Begin Module: Top Image with Content \\ -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <img src="./Alan-Lamarque.png" class="user-photo" style="width:100%;"/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Top Image with Content \\ -->
+                                                        
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <!-- // End Sidebar \\ -->
+                                        	<td valign="top" width="320">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="320">
+                                                    <tr>
+                                                        <td valign="top" class="bodyContent">
+                                            
+                                                            <!-- // Begin Module: Standard Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top">
+			                                                            <div>
+			                                                                <img class="flf-logo" src="../FLF-Logo-with-tagline.jpg" style="max-width:270px;"/><br>
+																			Tel: <a href="tel:2133580588">(213) 358-0588</a> ext 580<br>
+																			Fax: (424) 295-0557<br>
+																			<a href="mailto:lamarque@farahilaw.com">lamarque@farahilaw.com</a><br>
+																			<a href="https://www.facebook.com/FarahiLawFirm">Facebook</a> <span>|</span> <a href="https://www.instagram.com/calljustinforjustice/">Instagram</a> <span>|</span> <a href="https://twitter.com/FarahilawF">Twitter</a><br>
+																			<a href="https://justinforjustice.com/">JustinForJustice.com</a><br>
+																			<a href="https://goo.gl/maps/zLTMzPyQBBfD9atw9">12079 W. Jefferson Blvd. Los Angeles, CA 90230</a>
+			                                                            </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Standard Content \\ -->
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="10" cellspacing="0" width="600" id="templateFooter">
+                                    	<tr>
+                                        	<td valign="top" class="footerContent">
+                                            
+                                                <!-- // Begin Module: Standard Footer \\ -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td colspan="2" valign="middle" id="utility">
+                                                            <div>
+                                                                <img src="../awards.png" style="width:100%;"/>
+																<br>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Footer \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
