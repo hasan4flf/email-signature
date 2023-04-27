@@ -2,192 +2,89 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        
-        <!-- Facebook sharing information tags -->
-        <meta property="og:title" content="" />
-        
+        <meta property="" content="" />
         <title></title>
 		<style type="text/css">
-			/* Client-specific Styles */
-			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
-			body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
-			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
-			
-			/* Reset Styles */
+			#outlook a{padding:0;}
+			body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+			body{-webkit-text-size-adjust:none;}
 			body{margin:0; padding:0;}
 			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
 			table td{border-collapse:collapse;}
 			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
-			
-			/* Template Styles */
-
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Page
-			* @section background color
-			* @tip Set the background color for your email. You may want to choose one that matches your company's branding.
-			* @theme page
-			*/
 			body, #backgroundTable{
-				/*@editable*/ background-color: transparent;
+				background-color: transparent;
 			}
-
-			/**
-			* @tab Page
-			* @section email border
-			* @tip Set the border for your email.
-			*/
 			#templateContainer{
-				/*@editable*/ border: none;
+				border: none;
 			}
-
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Body
-			* @section body style
-			* @tip Set the background color for your email's body area.
-			*/
 			#templateContainer, .bodyContent{
-				/*@editable*/ background-color:#FFFFFF;
+				background-color:#FFFFFF;
 			}
-			
-			/**
-			* @tab Body
-			* @section body text
-			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-			* @theme main
-			*/
 			.bodyContent div{
-				/*@editable*/ color:#111;
-				/*@editable*/ font-family:Arial;
+				color:#111;
+				font-family:Arial;
 				font-weight: 600;
-				/*@editable*/ font-size:12px;
-				/*@editable*/ line-height:150%;
-				/*@editable*/ text-align:right;
+				font-size:12px;
+				line-height:150%;
+				text-align:right;
 			}
-			
-			/**
-			* @tab Body
-			* @section body link
-			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-			*/
-			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color: #1155cc;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+			.bodyContent div a:link, .bodyContent div a:visited, .bodyContent div a .yshortcuts {
+				color: #1155cc;
+				font-weight:normal;
+				text-decoration:underline;
 				font-weight: 600;
 			}
-			
 			.bodyContent img {
 				display:inline;
 				height:auto;
 			}
-			
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: SIDEBAR /\/\/\/\/\/\/\/\/\/\ */
-			
-			/**
-			* @tab Sidebar
-			* @section sidebar style
-			* @tip Set the background color and border for your email's sidebar area.
-			*/
 			#templateSidebar{
-				/*@editable*/ background-color:#FFFFFF;
-				/*@editable*/ border-right:0;
+				background-color:#FFFFFF;
+				border-right:0;
 			}
-			
-			/**
-			* @tab Sidebar
-			* @section sidebar text
-			* @tip Set the styling for your email's sidebar text. Choose a size and color that is easy to read.
-			*/
 			.sidebarContent div{
-				/*@editable*/ color:#111111;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:12px;
-				/*@editable*/ line-height:150%;
-				/*@editable*/ text-align:left;
+				color:#111111;
+				font-family:Arial;
+				font-size:12px;
+				line-height:150%;
+				text-align:left;
 			}
-			
-			/**
-			* @tab Sidebar
-			* @section sidebar link
-			* @tip Set the styling for your email's sidebar links. Choose a color that helps them stand out from your text.
-			*/
-			.sidebarContent div a:link, .sidebarContent div a:visited, /* Yahoo! Mail Override */ .sidebarContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#336699;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+			.sidebarContent div a:link, .sidebarContent div a:visited, .sidebarContent div a .yshortcuts {
+				color:#336699;
+				font-weight:normal;
+				text-decoration:underline;
 			}
-			
 			.sidebarContent img{
 				display:inline;
 				height:auto;
 			}
-			
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
-			
-			/**
-			* @tab Footer
-			* @section footer style
-			* @tip Set the background color and top border for your email's footer area.
-			* @theme footer
-			*/
 			#templateFooter{
-				/*@editable*/ background-color:#FFFFFF;
-				/*@editable*/ border-top:0;
+				background-color:#FFFFFF;
+				border-top:0;
 			}
-			
-			/**
-			* @tab Footer
-			* @section footer text
-			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-			* @theme footer
-			*/
 			.footerContent div{
-				/*@editable*/ color:#707070;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:12px;
-				/*@editable*/ line-height:125%;
-				/*@editable*/ text-align:left;
+				color:#707070;
+				font-family:Arial;
+				font-size:12px;
+				line-height:125%;
+				text-align:left;
 			}
-			
-			/**
-			* @tab Footer
-			* @section footer link
-			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
-			*/
-			.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#336699;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+			.footerContent div a:link, .footerContent div a:visited, .footerContent div a .yshortcuts {
+				color:#336699;
+				font-weight:normal;
+				text-decoration:underline;
 			}
-			
 			.footerContent img{
 				display:inline;
 			}
-			
-			
-			/**
-			* @tab Footer
-			* @section utility bar style
-			* @tip Set the background color and border for your email's footer utility bar.
-			* @theme footer
-			*/
 			#utility{
-				/*@editable*/ background-color:#FFFFFF;
-				/*@editable*/ border:0;
+				background-color:#FFFFFF;
+				border:0;
 				padding-top: 20px;
 			}
-
-			/**
-			* @tab Footer
-			* @section utility bar style
-			* @tip Set the background color and border for your email's footer utility bar.
-			*/
 			#utility div{
-				/*@editable*/ text-align:center;
+				text-align:center;
 			}
 			.flf-logo {
 				margin-bottom: 15px;
@@ -205,16 +102,12 @@
                     	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer">
                         	<tr>
                             	<td align="center" valign="top">
-                                    <!-- // Begin Template Body \\ -->
                                 	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
                                     	<tr>
-                                        	<!-- // Begin Sidebar \\  -->
                                         	<td valign="top" width="280" id="templateSidebar">
                                             	<table border="0" cellpadding="0" cellspacing="0" width="280">
                                                 	<tr>
                                                     	<td valign="top" class="sidebarContent">
-
-                                                            <!-- // Begin Module: Top Image with Content \\ -->
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td valign="top">
@@ -222,19 +115,14 @@
                                                                     </td>
                                                                 </tr>
                                                             </table>
-                                                            <!-- // End Module: Top Image with Content \\ -->
-                                                        
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <!-- // End Sidebar \\ -->
                                         	<td valign="top" width="320">
                                                 <table border="0" cellpadding="0" cellspacing="0" width="320">
                                                     <tr>
                                                         <td valign="top" class="bodyContent">
-                                            
-                                                            <!-- // Begin Module: Standard Content \\ -->
                                                             <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td valign="top">
@@ -250,25 +138,19 @@
                                                                     </td>
                                                                 </tr>
                                                             </table>
-                                                            <!-- // End Module: Standard Content \\ -->
-                                                            
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // End Template Body \\ -->
                                 </td>
                             </tr>
                         	<tr>
                             	<td align="center" valign="top">
-                                    <!-- // Begin Template Footer \\ -->
                                 	<table border="0" cellpadding="10" cellspacing="0" width="600" id="templateFooter">
                                     	<tr>
                                         	<td valign="top" class="footerContent">
-                                            
-                                                <!-- // Begin Module: Standard Footer \\ -->
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td colspan="2" valign="middle" id="utility">
@@ -279,12 +161,9 @@
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                <!-- // End Module: Standard Footer \\ -->
-                                            
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // End Template Footer \\ -->
                                 </td>
                             </tr>
                         </table>
